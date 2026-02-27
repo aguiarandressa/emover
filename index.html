@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Serviços | Espaço Emover</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4fb3bf',
+              accent: '#f17c55',
+              'background-light': '#f8fafb',
+              'background-dark': '#0f172a',
+            },
+            fontFamily: {
+              display: ['Public Sans', 'sans-serif'],
+            },
+            borderRadius: { DEFAULT: '0.5rem', lg: '0.75rem', xl: '1rem', full: '9999px' },
+          },
+        },
+      };
+    </script>
+    <style>
+      body { font-family: 'Public Sans', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+    <header class="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/90 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <span class="material-symbols-outlined text-2xl">eco</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-black tracking-tight text-slate-900 uppercase">Espaço Emover</span>
+              <span class="text-[10px] font-medium tracking-[0.2em] text-primary uppercase">Desenvolvimento Humano</span>
+            </div>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a class="text-sm font-semibold text-primary" href="index.html">Home</a>
+            <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="especialidades.html">Serviços</a>
+            <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="equipe.html">Equipe</a>
+            <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="contato.html">Contato</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <button class="hidden sm:flex items-center justify-center rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-md hover:bg-primary/90 transition-all">Acesso Restrito</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div class="mb-16 text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl font-black tracking-tight text-slate-900 sm:text-5xl mb-6">Nossas Áreas de <span class="text-primary">Expertise</span></h1>
+        <p class="text-lg text-slate-600 leading-relaxed">Oferecemos um suporte multidisciplinar completo, focado no desenvolvimento para a vida através de um olhar humanizado, profissional e acolhedor.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">psychology</span></div><h3 class="text-xl font-bold mb-3">Psicologia</h3><p class="text-sm leading-relaxed text-slate-600">Foco no bem-estar emocional e comportamental através de estratégias personalizadas de acolhimento e crescimento.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">record_voice_over</span></div><h3 class="text-xl font-bold mb-3">Fonoaudiologia</h3><p class="text-sm leading-relaxed text-slate-600">Desenvolvimento de habilidades de comunicação verbal e não verbal, garantindo que cada voz seja compreendida.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">accessibility_new</span></div><h3 class="text-xl font-bold mb-3">Terapia Ocupacional</h3><p class="text-sm leading-relaxed text-slate-600">Estímulo à autonomia e independência nas atividades do dia a dia por meio de práticas adaptadas.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">menu_book</span></div><h3 class="text-xl font-bold mb-3">Psicopedagogia</h3><p class="text-sm leading-relaxed text-slate-600">Identificação e superação de desafios de aprendizagem para potencializar o desempenho cognitivo e acadêmico.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">groups</span></div><h3 class="text-xl font-bold mb-3">Serviço Social</h3><p class="text-sm leading-relaxed text-slate-600">Apoio às famílias no acesso a direitos e recursos, fortalecendo a rede de suporte e inclusão social.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">exercise</span></div><h3 class="text-xl font-bold mb-3">Fisioterapia</h3><p class="text-sm leading-relaxed text-slate-600">Trabalho motor e funcional individualizado para promover movimento, força e independência física.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">palette</span></div><h3 class="text-xl font-bold mb-3">Arteterapia</h3><p class="text-sm leading-relaxed text-slate-600">A arte como ferramenta de expressão emocional e criatividade, transformando sentimentos em possibilidades.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">nutrition</span></div><h3 class="text-xl font-bold mb-3">Nutrição</h3><p class="text-sm leading-relaxed text-slate-600">Promoção de hábitos saudáveis que sustentam o desenvolvimento integral e o bem-estar físico.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">medical_services</span></div><h3 class="text-xl font-bold mb-3">Psiquiatria</h3><p class="text-sm leading-relaxed text-slate-600">Suporte especializado em saúde mental com um olhar clínico humanizado para o equilíbrio da vida.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+        <div class="group relative flex flex-col justify-between overflow-hidden rounded-xl border border-slate-100 bg-white p-6 hover:shadow-xl hover:shadow-primary/5 transition-all cursor-pointer shadow-sm">
+          <div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"><span class="material-symbols-outlined text-2xl">neurology</span></div><h3 class="text-xl font-bold mb-3">Neurologia</h3><p class="text-sm leading-relaxed text-slate-600">Cuidado preventivo e clínico da saúde neurológica para um desenvolvimento harmonioso e saudável.</p></div>
+          <div class="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider group-hover:gap-4 transition-all">Saber mais <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+        </div>
+      </div>
+
+      <section class="mt-24 overflow-hidden rounded-3xl bg-slate-50 px-6 py-16 sm:px-12 lg:px-20 text-center border border-slate-100">
+        <h2 class="text-3xl font-black text-slate-900 sm:text-4xl mb-6">Pronto para começar a transformação?</h2>
+        <p class="text-lg text-slate-700 mb-10 max-w-2xl mx-auto">Nossa equipe multidisciplinar está pronta para acolher sua família e traçar o melhor caminho para o desenvolvimento integral.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button class="w-full sm:w-auto flex items-center justify-center rounded-full bg-accent px-10 py-4 text-lg font-bold text-white shadow-lg hover:scale-105 transition-all">Agende uma Avaliação Agora</button>
+          <button class="w-full sm:w-auto flex items-center justify-center rounded-xl bg-white border border-slate-200 px-10 py-4 text-lg font-bold text-slate-700 hover:bg-slate-50 transition-all">Falar via WhatsApp</button>
+        </div>
+      </section>
+
+      <section class="mt-24 mb-12 max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-black text-slate-900 sm:text-4xl mb-12 text-center">Dúvidas Frequentes sobre nossos Serviços</h2>
+        <div class="space-y-4">
+          <details class="group rounded-xl border border-slate-100 bg-white p-6 shadow-sm"><summary class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900"><h3 class="text-lg font-bold">Como é feita a escolha das terapias?</h3><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-4 text-slate-600 leading-relaxed">Nossa equipe multidisciplinar realiza uma avaliação inicial detalhada para entender as necessidades, habilidades e desafios únicos de cada indivíduo, construindo um Plano Terapêutico Integrado personalizado.</p></details>
+          <details class="group rounded-xl border border-slate-100 bg-white p-6 shadow-sm"><summary class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900"><h3 class="text-lg font-bold">Vocês atendem por convênio médico?</h3><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-4 text-slate-600 leading-relaxed">Atualmente, trabalhamos com atendimentos particulares e oferecemos toda a documentação necessária para que as famílias possam solicitar o reembolso junto aos seus planos de saúde.</p></details>
+          <details class="group rounded-xl border border-slate-100 bg-white p-6 shadow-sm"><summary class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900"><h3 class="text-lg font-bold">A clínica realiza suporte escolar?</h3><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-4 text-slate-600 leading-relaxed">Sim. Acreditamos que o desenvolvimento deve ser contínuo. Nossa equipe atua diretamente com as escolas para adaptar currículos e remover barreiras de aprendizagem.</p></details>
+          <details class="group rounded-xl border border-slate-100 bg-white p-6 shadow-sm"><summary class="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900"><h3 class="text-lg font-bold">Preciso de um laudo fechado para iniciar o atendimento?</h3><span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span></summary><p class="mt-4 text-slate-600 leading-relaxed">Não. Nosso foco é na necessidade e no desenvolvimento da pessoa. Iniciamos o acolhimento e a intervenção com base nas habilidades e dificuldades apresentadas, independentemente do diagnóstico fechado.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20 border-t border-slate-100 py-12 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-3 mb-6"><div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white"><span class="material-symbols-outlined text-xl">eco</span></div><span class="text-lg font-black tracking-tight uppercase">Espaço Emover</span></div>
+            <p class="text-sm text-slate-400 mb-6 max-w-sm leading-relaxed">Comprometidos com a excelência clínica e o acolhimento humano, transformando vidas através do desenvolvimento contínuo.</p>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold uppercase tracking-widest mb-6">Navegação</h4>
+            <ul class="space-y-4 text-sm text-slate-400 font-medium"><li><a class="hover:text-primary" href="sobre.html">Sobre Nós</a></li><li><a class="hover:text-primary" href="especialidades.html">Especialidades</a></li><li><a class="hover:text-primary" href="ambientes.html">Nossos Espaços</a></li><li><a class="hover:text-primary" href="contato.html">Contato</a></li></ul>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold uppercase tracking-widest mb-6">Contato</h4>
+            <ul class="space-y-4 text-sm text-slate-400 font-medium"><li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg">location_on</span><span>Rua Exemplo, 123 - Centro<br />São Paulo, SP</span></li><li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">call</span><span>(11) 4002-8922</span></li></ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
