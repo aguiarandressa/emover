@@ -1,24 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- Metadados básicos da página -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espaço Emover | Especialidades</title>
+
+    <!-- Dependências visuais (Tailwind + fonte) -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <script src="assets/js/tailwind-config.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tema compartilhado entre páginas -->
+    <script src="assets/js/tailwind-base.js"></script>
+    <script src="assets/js/tailwind-config.ambientes.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body class="bg-background-light text-slate-900 antialiased">
+    <!-- Conteúdo principal da página de Especialidades -->
     <main class="max-w-5xl mx-auto px-6 py-16">
+      <!-- Link rápido para voltar à home -->
       <a href="index.html" class="text-primary font-semibold">← Voltar para Home</a>
-      <h1 class="text-4xl font-bold mt-4 mb-3">Página Especialidades</h1>
-      <p class="text-slate-600 mb-8">Lista inicial das especialidades/páginas já criadas para irmos evoluindo sem sobrescrever.</p>
 
+      <!-- Bloco introdutório da seção -->
+      <h1 class="text-4xl font-bold mt-4 mb-3">Página Especialidades</h1>
+      <p class="text-slate-600 mb-8">
+        Lista inicial das especialidades/páginas já criadas para irmos evoluindo sem sobrescrever.
+      </p>
+
+      <!-- Grade de links para páginas de especialidades já prontas -->
       <div class="grid sm:grid-cols-2 gap-5">
-        <a href="terapia-adultos-adolescentes.html" class="p-6 bg-white rounded-2xl border border-slate-200 hover:border-primary/40 transition-colors">
+        <!-- Card/link para especialidade já implementada -->
+        <a
+          href="terapia-adultos-adolescentes.html"
+          class="p-6 bg-white rounded-2xl border border-slate-200 hover:border-primary/40 transition-colors"
+        >
           <h2 class="text-xl font-bold">Terapia Adultos e Adolescentes</h2>
-          <p class="text-slate-500 text-sm mt-2">Página completa já implementada para psicologia de adultos/adolescentes.</p>
+          <p class="text-slate-500 text-sm mt-2">
+            Página completa já implementada para psicologia de adultos/adolescentes.
+          </p>
         </a>
       </div>
     </main>
