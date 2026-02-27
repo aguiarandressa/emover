@@ -1,68 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              primary: '#ec5b13',
-              'background-light': '#f8f6f6',
-              'background-dark': '#221610',
-            },
-            fontFamily: {
-              display: ['Public Sans', 'sans-serif'],
-            },
-            borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' },
-          },
-        },
-      };
-    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/tailwind-base.js"></script>
+    <script src="assets/js/tailwind-config.ambientes.js"></script>
+
     <title>Sala de Terapia Adultos e Adolescentes | Espaço Emover</title>
   </head>
   <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <header
+          class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50"
+        >
           <div class="flex items-center gap-3">
             <div class="text-primary">
               <span class="material-symbols-outlined text-3xl">psychology</span>
             </div>
-            <h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">Espaço Emover</h2>
+            <p class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">Espaço Emover</p>
           </div>
           <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
             <nav class="flex items-center gap-8">
-              <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="index.html">Início</a>
-              <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="especialidades.html">Especialidades</a>
-              <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="contato.html">Agendamento</a>
+              <a
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                href="index.html"
+                >Início</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                href="especialidades.html"
+                >Especialidades</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors"
+                href="contato.html"
+                >Agendamento</a
+              >
             </nav>
             <div class="flex gap-3">
-              <button class="flex items-center justify-center rounded-xl h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+              <button
+                type="button"
+                aria-label="Compartilhar"
+                class="flex items-center justify-center rounded-xl h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-all"
+              >
                 <span class="material-symbols-outlined text-[20px]">share</span>
               </button>
-              <button class="flex items-center justify-center rounded-xl h-10 px-4 bg-primary text-white gap-2 text-sm font-bold hover:opacity-90 transition-all">
+              <button
+                type="button"
+                class="flex items-center justify-center rounded-xl h-10 px-4 bg-primary text-white gap-2 text-sm font-bold hover:opacity-90 transition-all"
+              >
                 <span class="material-symbols-outlined text-[20px]">calendar_month</span>
                 <span>Agendar</span>
               </button>
             </div>
           </div>
-          <div class="md:hidden"><span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span></div>
+          <div class="md:hidden">
+            <button type="button" aria-label="Abrir menu" class="text-slate-900 dark:text-slate-100">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
         </header>
 
         <main class="flex-1">
           <div class="max-w-[1200px] mx-auto px-6 md:px-10 py-8">
             <div class="@container mb-12">
               <div class="relative group overflow-hidden rounded-2xl aspect-[21/9] min-h-[400px]">
-                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Consultório moderno com poltronas confortáveis e iluminação suave" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVn5eGx_Wz2ESQmZ1RH_DJAMeVLw19yDblO84SsHxolSuMXBubXzQVJTSCe-ZZHrkxFbzmH6-zzsyrbXX7T4Ms96tyvkJItssDZapD-gkQLgXLsieHOIr8i0Kr2TCCPHYwHKImedTtaXe_Yg73XfsebgGkgg9YiUJklPg5i6pnjRl5_KR2HJtU-32oIhwRbK1lI9_k1TlvSwBzXNxidJtoQwUmLLYUfQdZEIzKgycFXE7c14M__Bkb21YVA6_YnSmdd87l1dvMyEMZ');"></div>
+                <div
+                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Consultório moderno com poltronas confortáveis e iluminação suave"
+                  style="
+                    background-image:
+                      linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%),
+                      url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVn5eGx_Wz2ESQmZ1RH_DJAMeVLw19yDblO84SsHxolSuMXBubXzQVJTSCe-ZZHrkxFbzmH6-zzsyrbXX7T4Ms96tyvkJItssDZapD-gkQLgXLsieHOIr8i0Kr2TCCPHYwHKImedTtaXe_Yg73XfsebgGkgg9YiUJklPg5i6pnjRl5_KR2HJtU-32oIhwRbK1lI9_k1TlvSwBzXNxidJtoQwUmLLYUfQdZEIzKgycFXE7c14M__Bkb21YVA6_YnSmdd87l1dvMyEMZ');
+                  "
+                ></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-12 w-full">
-                  <span class="inline-block px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md text-primary text-xs font-bold uppercase tracking-wider mb-4">Saúde Mental &amp; Bem-estar</span>
-                  <h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight max-w-2xl">Sala de Terapia Adultos e Adolescentes</h1>
+                  <span
+                    class="inline-block px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md text-primary text-xs font-bold uppercase tracking-wider mb-4"
+                    >Saúde Mental &amp; Bem-estar</span
+                  >
+                  <h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight max-w-2xl">
+                    Sala de Terapia Adultos e Adolescentes
+                  </h1>
                 </div>
               </div>
             </div>
@@ -70,10 +99,24 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div class="lg:col-span-2 flex flex-col gap-8">
                 <section>
-                  <h2 class="text-3xl font-black text-slate-900 dark:text-slate-100 mb-4 tracking-tight">Um ambiente de acolhimento e escuta</h2>
-                  <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">Nosso espaço foi cuidadosamente projetado para oferecer a privacidade e o conforto necessários para o desenvolvimento da autonomia. Aqui, cada detalhe — das cores neutras à acústica impecável — visa promover uma jornada de autoconhecimento segura para adolescentes e adultos.</p>
-                  <div class="flex items-center gap-6 p-6 rounded-2xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
-                    <div class="h-20 w-20 rounded-full bg-cover bg-center border-4 border-white dark:border-slate-800 shadow-sm" data-alt="Foto profissional da psicóloga responsável" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj8gAKCs58Ku5iQZ8386TdjS2maR76OuZZ8hH9PX0r4fnhwGd66PkX7k2rCwVPc2Li7SIsqtNi3Dsy1nQt7GurdX50R7YiDDznW-9r2SXfZNASki0toBvB-WwP64xI_208FFeF0X5HZGN5jFMO3PcURlPwZr-JMHXyhqzYWDmM9zcR1qopXrUVXXey4X7aoFLzB7XyxYD1FtRcnx5W3ip0Jidx_Eyx9cjEAT_JV3ezn08lAsWBLQAkml-hmjshc0Pu9SZpnj4cs2Fx');"></div>
+                  <h2 class="text-3xl font-black text-slate-900 dark:text-slate-100 mb-4 tracking-tight">
+                    Um ambiente de acolhimento e escuta
+                  </h2>
+                  <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+                    Nosso espaço foi cuidadosamente projetado para oferecer a privacidade e o conforto necessários para
+                    o desenvolvimento da autonomia. Aqui, cada detalhe — das cores neutras à acústica impecável — visa
+                    promover uma jornada de autoconhecimento segura para adolescentes e adultos.
+                  </p>
+                  <div
+                    class="flex items-center gap-6 p-6 rounded-2xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700"
+                  >
+                    <div
+                      class="h-20 w-20 rounded-full bg-cover bg-center border-4 border-white dark:border-slate-800 shadow-sm"
+                      data-alt="Foto profissional da psicóloga responsável"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj8gAKCs58Ku5iQZ8386TdjS2maR76OuZZ8hH9PX0r4fnhwGd66PkX7k2rCwVPc2Li7SIsqtNi3Dsy1nQt7GurdX50R7YiDDznW-9r2SXfZNASki0toBvB-WwP64xI_208FFeF0X5HZGN5jFMO3PcURlPwZr-JMHXyhqzYWDmM9zcR1qopXrUVXXey4X7aoFLzB7XyxYD1FtRcnx5W3ip0Jidx_Eyx9cjEAT_JV3ezn08lAsWBLQAkml-hmjshc0Pu9SZpnj4cs2Fx');
+                      "
+                    ></div>
                     <div class="flex flex-col">
                       <p class="text-slate-900 dark:text-slate-100 text-xl font-bold">Equipe Especializada</p>
                       <p class="text-primary font-medium">Foco em Adolescentes e Adultos</p>
@@ -84,41 +127,92 @@
 
                 <section>
                   <div class="flex border-b border-slate-200 dark:border-slate-800 gap-8 mb-6">
-                    <button class="border-b-2 border-primary text-primary pb-4 px-1 text-sm font-bold tracking-wide">SOBRE A SALA</button>
-                    <button class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-4 px-1 text-sm font-bold tracking-wide hover:text-slate-700 dark:hover:text-slate-200 transition-colors">ABORDAGENS</button>
-                    <button class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-4 px-1 text-sm font-bold tracking-wide hover:text-slate-700 dark:hover:text-slate-200 transition-colors">DÚVIDAS</button>
+                    <button
+                      type="button"
+                      class="border-b-2 border-primary text-primary pb-4 px-1 text-sm font-bold tracking-wide"
+                    >
+                      SOBRE A SALA
+                    </button>
+                    <button
+                      type="button"
+                      class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-4 px-1 text-sm font-bold tracking-wide hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
+                    >
+                      ABORDAGENS
+                    </button>
+                    <button
+                      type="button"
+                      class="border-b-2 border-transparent text-slate-500 dark:text-slate-400 pb-4 px-1 text-sm font-bold tracking-wide hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
+                    >
+                      DÚVIDAS
+                    </button>
                   </div>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm">
+                    <div
+                      class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm"
+                    >
                       <span class="material-symbols-outlined text-primary mb-3">verified_user</span>
-                      <h4 class="font-bold mb-2">Privacidade Total</h4>
-                      <p class="text-sm text-slate-600 dark:text-slate-400">Isolamento acústico de alta performance garantindo sigilo absoluto nas sessões.</p>
+                      <h3 class="font-bold mb-2">Privacidade Total</h3>
+                      <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Isolamento acústico de alta performance garantindo sigilo absoluto nas sessões.
+                      </p>
                     </div>
-                    <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm">
+                    <div
+                      class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm"
+                    >
                       <span class="material-symbols-outlined text-primary mb-3">chair</span>
-                      <h4 class="font-bold mb-2">Conforto Ergonômico</h4>
-                      <p class="text-sm text-slate-600 dark:text-slate-400">Mobiliário selecionado para proporcionar relaxamento e foco durante o diálogo.</p>
+                      <h3 class="font-bold mb-2">Conforto Ergonômico</h3>
+                      <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Mobiliário selecionado para proporcionar relaxamento e foco durante o diálogo.
+                      </p>
                     </div>
                   </div>
                 </section>
               </div>
 
               <aside class="flex flex-col gap-6">
-                <div class="sticky top-24 p-8 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl shadow-slate-200/50 dark:shadow-none">
+                <div
+                  class="sticky top-24 p-8 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl shadow-slate-200/50 dark:shadow-none"
+                >
                   <h3 class="text-xl font-bold mb-6">Pronto para começar?</h3>
                   <div class="flex flex-col gap-4">
-                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-primary">schedule</span><span class="text-sm">Sessões de 50 minutos</span></div>
-                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-primary">location_on</span><span class="text-sm">Unidade Central - Piso 3</span></div>
-                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400"><span class="material-symbols-outlined text-primary">language</span><span class="text-sm">Presencial ou Online</span></div>
+                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                      <span class="material-symbols-outlined text-primary">schedule</span
+                      ><span class="text-sm">Sessões de 50 minutos</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                      <span class="material-symbols-outlined text-primary">location_on</span
+                      ><span class="text-sm">Unidade Central - Piso 3</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+                      <span class="material-symbols-outlined text-primary">language</span
+                      ><span class="text-sm">Presencial ou Online</span>
+                    </div>
                   </div>
                   <hr class="my-8 border-slate-100 dark:border-slate-700" />
-                  <button class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:shadow-lg hover:shadow-primary/30 transition-all mb-4">Agendar Primeira Consulta</button>
-                  <button class="w-full py-4 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Falar com um Especialista</button>
+                  <button
+                    type="button"
+                    class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:shadow-lg hover:shadow-primary/30 transition-all mb-4"
+                  >
+                    Agendar Primeira Consulta
+                  </button>
+                  <button
+                    type="button"
+                    class="w-full py-4 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+                  >
+                    Falar com um Especialista
+                  </button>
                 </div>
                 <div class="p-6 rounded-2xl bg-primary/5 border border-primary/10">
-                  <h4 class="font-bold text-primary mb-2">Localização</h4>
+                  <h3 class="font-bold text-primary mb-2">Localização</h3>
                   <div class="w-full h-32 rounded-lg bg-slate-200 dark:bg-slate-700 mb-3 overflow-hidden">
-                    <div class="w-full h-full bg-cover bg-center opacity-70" data-alt="Mapa da localização do consultório" data-location="São Paulo, Brasil" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjnzmB1Tl5Xpkou7B8N5skm78tfobDlfNcuyfuuIm5Bw4yesyg4-ScZFmAmjPhSa6-BZFYFi1p1zbWMJIahrvWZMwCrEqeRC5QpQbbVsOekxV-dKc1cC5oxcDmzh7eqQccG7HiK92bq7cfNvafpw9Omkq3PUSTYLLdLLA8sM_OX-KAYL5yAFiXl209PC1xOpsHrYCop6lToQa7F7kphr6Z92PmgafuUdBMwtHBS9uF7xCTygkpa9FlOkbYRGl2F8Bi-KMqZdVo4_jA');"></div>
+                    <div
+                      class="w-full h-full bg-cover bg-center opacity-70"
+                      data-alt="Mapa da localização do consultório"
+                      data-location="São Paulo, Brasil"
+                      style="
+                        background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjnzmB1Tl5Xpkou7B8N5skm78tfobDlfNcuyfuuIm5Bw4yesyg4-ScZFmAmjPhSa6-BZFYFi1p1zbWMJIahrvWZMwCrEqeRC5QpQbbVsOekxV-dKc1cC5oxcDmzh7eqQccG7HiK92bq7cfNvafpw9Omkq3PUSTYLLdLLA8sM_OX-KAYL5yAFiXl209PC1xOpsHrYCop6lToQa7F7kphr6Z92PmgafuUdBMwtHBS9uF7xCTygkpa9FlOkbYRGl2F8Bi-KMqZdVo4_jA');
+                      "
+                    ></div>
                   </div>
                   <p class="text-xs text-slate-500 dark:text-slate-400">Rua das Flores, 123 - Jardins, São Paulo</p>
                 </div>
@@ -133,8 +227,13 @@
               <span class="material-symbols-outlined text-2xl">psychology</span>
               <span class="font-bold">Espaço Emover</span>
             </div>
-            <p class="text-slate-500 text-sm">© 2024 Espaço Emover. Todos os direitos reservados. Saúde Mental com Propósito.</p>
-            <div class="flex gap-6"><a class="text-slate-400 hover:text-primary transition-colors" href="#">Instagram</a><a class="text-slate-400 hover:text-primary transition-colors" href="#">LinkedIn</a></div>
+            <p class="text-slate-500 text-sm">
+              © 2024 Espaço Emover. Todos os direitos reservados. Saúde Mental com Propósito.
+            </p>
+            <div class="flex gap-6">
+              <a class="text-slate-400 hover:text-primary transition-colors" href="#">Instagram</a
+              ><a class="text-slate-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+            </div>
           </div>
         </footer>
       </div>
